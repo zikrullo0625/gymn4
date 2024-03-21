@@ -5,6 +5,7 @@ import Olimpiada from './components/Olimpiada.vue'
 import Auth from './components/Auth.vue'
 import Form from './components/Form.vue'
 import Schedule from './components/Schedule.vue'
+import Admin from './components/Admin.vue'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 
@@ -14,6 +15,7 @@ app.component('app', App)
 app.component('olimpiada', Olimpiada)
 app.component('feedback', Form)
 app.component('Auth', Auth)
+app.component('admin', Admin)
 app.component('Schedule', Schedule)
 
 app.mount("#app");

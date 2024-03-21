@@ -16,6 +16,15 @@ class HomeController extends Controller
     {
         $name = $req->get('Name');
         $password = $req->get('Password');
-        
+        if($name == 'admin' && $password == 'root'){
+            return [
+                'status' => 200,
+                'admin' => 1
+            ];
+        }
+        return [
+            'status' => 200,
+            'admin' => 0
+        ];
     }
 }
